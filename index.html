@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de IMC</title>
+    <title>IMC Calculator</title>
     <link rel="stylesheet" href = 'style.css'>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,15 @@
                 <h1 id = 'header1'>IMC Calculator</h1>
                 <div class = "form-component">
                     <label>Name:</label>
-                    <input id = 'name' placeholder = "Person's name">
+                    <input id = 'name' placeholder = "Person's name" type = "text">
                 </div>
                 <div class = "form-component">
                     <label>Height:</label>
-                    <input id = 'height' placeholder = "Person's height">
+                    <input id = 'height' placeholder = "Person's height" type = "number">
                 </div>
                 <div class = "form-component">
                     <label>Weight:</label>
-                    <input id = 'weight' placeholder = "Person's weight">
+                    <input id = 'weight' placeholder = "Person's weight" type = "number">
                 </div>
                 <button id = 'submit-button' onclick = "buttonPress()">Check IMC</button>
                 <p id = 'output' >...</p>

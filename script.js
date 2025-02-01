@@ -7,10 +7,12 @@ function checkImc(imcValue) {
     const conditionArray = [
         ['Underweight', 18.5],
         ['Normal Weight', 25],
-        ['Overweight (above the desired weight).', 30]
+        ['Overweight (above the desired weight)', 30],
+        ['Obesity Class I', 35],
+        ['Obesity Class II', 40],
     ]
 
-    let condition = 'Obesity'
+    let condition = 'Obesity Class III / Morbid'
 
     for (const index in conditionArray) {
         const conditionProperties = conditionArray[index]
@@ -39,7 +41,7 @@ function buttonPress() {
     if (validate(weightInputValue, heightInputValue)) {
         const imc = calculateImc(weightInputValue, heightInputValue)
         const response = checkImc(imc)
-            resultOutput.innerHTML = `The individual ${nameInputValue} is currently ${response}`
+            resultOutput.innerHTML = `The individual ${nameInputValue} is currently ${response} with an IMC of ${imc.toFixed(1)}.`
         return;
     }
         

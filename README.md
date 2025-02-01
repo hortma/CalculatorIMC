@@ -1,2 +1,2 @@
 # IMCCalculator
- Calculates IMC from Brazil
+ Calculates IMC/Índice de massa corporal/Body Mass Index/BMI

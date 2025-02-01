@@ -26,7 +26,7 @@ function checkImc(imcValue) {
 }
 
 function validate(weightInput, heightInput) {
-    if (weightInput && heightInput && typeof(weightInput) === "number" && typeof(weightInput) === "number") {
+    if (weightInput && heightInput && typeof(weightInput) === "number" && typeof(heightInput) === "number" && weightInput > 0 && heightInput > 0) {
         return true
     }
     return false

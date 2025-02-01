@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href = 'style.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+
+        <div class="container">
+            <div class="form-data">
+                <h1 id = 'header1'>IMC Calculator</h1>
+                <div class = "form-component">
+                    <label>Name:</label>
+                    <input id = 'name' placeholder = "Person's name">
+                </div>
+                <div class = "form-component">
+                    <label>Height:</label>
+                    <input id = 'height' placeholder = "Person's height">
+                </div>
+                <div class = "form-component">
+                    <label>Weight:</label>
+                    <input id = 'weight' placeholder = "Person's weight">
+                </div>
+                <button id = 'submit-button' onclick = "buttonPress()">Check IMC</button>
+                <p id = 'output' >...</p>
+                <p id = 'formula' >Formula: Weight (in kilograms) / Height² (in meters)</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+<script src = 'script.js'></script>
+</html>

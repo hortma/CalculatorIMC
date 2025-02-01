@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(38, 34, 41),rgb(20, 16, 20));
+}
+
+.form-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(70, 57, 143),rgb(47, 37, 83));
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+}
+
+input, #submit-button, #formula {
+    background: linear-gradient(rgb(38, 34, 41),rgb(20, 16, 20));
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input {
+    margin-left: 6px;
+    height: 75%;
+    text-align: center;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+}
+
+.form-component{
+    margin: 3px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header1 {
+    margin: 13px;
+}
+
+p {
+    margin: 30px 50px;
+    text-align: center;
+}
+
+#submit-button {
+    margin: 13px;
+}
+
+#submit-button:hover {
+    background: linear-gradient(rgb(91, 82, 99),rgb(54, 44, 54));
+}
+
+#submit-button:active {
+    background: linear-gradient(rgb(231, 225, 236),rgb(199, 175, 199));
+    color: black;
+}
+
+input:focus {
+    background: linear-gradient(rgb(91, 82, 99),rgb(54, 44, 54));
+}
